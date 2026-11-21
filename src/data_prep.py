@@ -48,7 +48,7 @@ def make_features(hourly):
     df["roll_mean_24"] = df["kw"].shift(1).rolling(24).mean()
     df["roll_mean_168"] = df["kw"].shift(1).rolling(168).mean()
     df["hour"] = df.index.hour
-    df["dayofweek"] = df.index.dayofweek
+    df["dayofweek"] = df.index.day_of_week
     df["is_weekend"] = (df["dayofweek"] >= 5).astype(int)
     df["month"] = df.index.month
     df["hour_sin"] = np.sin(2 * np.pi * df["hour"] / 24)
