@@ -23,7 +23,7 @@ The cleaned hourly file `data/hourly.csv` is included.
 
 ## Setup
 ```bash
-git clone [repo-url]
+git clone https://github.com/Asifa-Minahil011/smart_electricity
 cd smart_electricity
 python -m venv venv
 venv\Scripts\activate          # Windows
