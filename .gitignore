@@ -4,3 +4,5 @@ __pycache__/
 .ipynb_checkpoints/
 data/household_power_consumption.txt
 .DS_Store
+models/*.joblib
+!models/best_model.joblib
